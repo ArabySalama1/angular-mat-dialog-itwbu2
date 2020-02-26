@@ -1,0 +1,17 @@
+ <div>
+     <div mat-dialog-title>
+        <span aria-label="Close" mat-dialog-close>X</span>
+        <h3>Messages</h3>
+     </div>
+
+     <mat-dialog-content>
+     <p>You have no messages.</p>
+     </mat-dialog-content>
+
+
+     <mat-dialog-actions>
+        <button mat-button (click)="onNoClick()">back</button>
+  <button mat-button [mat-dialog-close]="isLoad()" cdkFocusInitial>create</button>
+     </mat-dialog-actions>
+  </div> 
+  
